@@ -37,8 +37,9 @@
     <div class="navbar bg-base-100">
         <div class="navbar-start">
          
-          <div class="flex items-center">
-            <a class=" text-3xl font-bold text-text-title"><span class="rounded-full p-2 bg-[#ABEF5F]"><i class="fa-solid fa-arrow-up"></i></span> Rinterio </a>
+          <div class="flex gap-3 items-center justify-center">
+            <span class="rounded-full p-2 text-center  text-sm bg-[#ABEF5F] h-8 w-8"><i class="fa-solid fa-arrow-up"></i></span>
+            <a class=" text-3xl font-bold text-text-title"> Rinterio </a>
           </div>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -53,10 +54,12 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <div class=" hidden lg:flex items-center  justify-center gap-5  font-semibold text-xl mr-6">
-            <a class=" rounded-full p-2" ><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a class=" rounded-full p-2"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a class=" btn  bg-[#ABEF5F] text-xl font-bold rounded-xl  ">Book Consult <span class="ml-4 p-1 text-lg rounded-full bg-[#1C1C1C] text-white"><i class="fa-solid fa-arrow-up"></i></span></a>
+          <div class=" hidden lg:flex items-center  justify-center gap-5  font-semibold  mr-6">
+          <div class="flex items-center justify-center gap-5">
+            <a class=" rounded-full p-2 w-10 h-10 border-2" ><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class=" rounded-full p-2 w-10 h-10 border-2"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+            <a class=" btn  bg-text-primary text-xl font-bold rounded-full  ">Book Consult <span class="ml-4 p-2 text-sm rounded-full text-center w-8 h-8 bg-[#1C1C1C] text-white"><i class="fa-solid fa-arrow-up"></i></span></a>
           </div>
          
           
@@ -90,11 +93,80 @@
           </div>
         </div>
       </div>
+      <!-- banner section -->
+      <div class="  w-11/12 mx-auto my-14">
+        <!-- banner-img -->
+         <div class="flex items-center justify-center">
+          <img src="./assets/banner.png" alt="">
+         </div>
+        <div class="hero-content text-center">
+          <div class="">
+            <h1 class=" text-3xl text-text-title lg:text-6xl font-bold">A barn house of this design has a <br>
+               striking appearance</h1>
+            <p class="py-6 leading-6 text-text-discription">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="btn text-xl text-text-title font-bold bg-[#ABEF5F80] rounded-full">View Details  <span class="ml-4 p-2 text-sm w-8 h-8 rounded-full bg-text-primary text-black"><i class="fa-solid fa-arrow-up"></i></span></button>
+          </div>
+        </div>
+      </div>
 
 </header>
     <!-- main section -->
-    <main>
-
+    <main class="bg-[#F4F4F4] ">
+<!-- about us section -->
+ <section class="w-11/12 mx-auto relative rounded-xl lg:pl-16 pt-8">
+  <img class="hidden absolute left-16 top-2 lg:block" src="./assets/Vector.png" alt="">
+  <div class="  ">
+    <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
+      <img
+        src="./assets/Rectangle.png"
+        class=" rounded-lg shadow-2xl  " />
+      <div>
+        <div class="text-center lg:text-left">
+          <button class="btn   bg-white rounded-full"> <span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
+          <h1 class=" text-3xl lg:text-4xl font-bold text-text-title mt-4">We design thoughtful, <br> liveable spaces</h1>
+        <p class="py-6 text-text-discription font-medium">
+          The barn house captivates with its blend of rustic charm and <br>
+          modern sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        </div>
+        
+        <!-- card-1 -->
+        <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <figure>
+            <img
+              src="./assets/commercial.png"
+              alt="Movie" />
+          </figure>
+          <div class="card-body ">
+            <h2 class="card-title text-xl font-extrabold text-text-title">Commercial</h2>
+            <p class="text-text-discription font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card card-side bg-base-100 shadow-xl pl-6 mt-5">
+          <figure>
+            <img
+              src="./assets/residential.png"
+              alt="Movie" />
+          </figure>
+          <div class="card-body ">
+            <h2 class="card-title text-xl font-extrabold text-text-title">Residential</h2>
+            <p class="text-text-discription font-medium">The barn house captivates with its blend <br> of rustic charm and modern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- our work process -->
+  <section class="w-11/12 mx-auto relative rounded-xl my-24">
+    <div class="text-center">
+      <button class="btn mb-4  bg-white rounded-full"> <span><i class="fa-solid fa-arrow-right"></i></span>How we works</button>
+    </div>
+  </section>
+  
     </main>
     <!-- footer  section -->
 </body>
