@@ -17,20 +17,37 @@
                 'text-primary': '#ABEF5F',
                 'text-title': '#212121',
                 'text-discription': '#494949',
-              }
-            }
-          }
+              },
+            
+            },
+          },
         }
       </script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- fonts awsome -->
     <script src="https://kit.fontawesome.com/93d1402e74.js" crossorigin="anonymous"></script>
+    <style>
+  .manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+ 
+ 
+}
+.next-section{
+
+    background-image: url(./assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+    </style>
 
 </head>
-<body>
+<body class="manrope-font">
   <!-- heaer section -->
   <header class="w-11/12 mx-auto ">
     <!-- navbar -->
@@ -38,7 +55,10 @@
         <div class="navbar-start">
          
           <div class="flex gap-3 items-center justify-center">
-            <span class="rounded-full p-2 text-center  text-sm bg-[#ABEF5F] h-8 w-8"><i class="fa-solid fa-arrow-up"></i></span>
+            <span class="rounded-full p-2 text-center  text-sm bg-[#ABEF5F] h-8 w-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            </span>
             <a class=" text-3xl font-bold text-text-title"> Rinterio </a>
           </div>
         </div>
@@ -54,20 +74,23 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <div class=" hidden lg:flex items-center  justify-center gap-5  font-semibold  mr-6">
+          <div class=" hidden  lg:flex items-center  justify-center gap-5  font-semibold  mr-6">
           <div class="flex items-center justify-center gap-5">
             <a class=" rounded-full p-2 w-10 h-10 border-2" ><i class="fa-solid fa-magnifying-glass"></i></a>
             <a class=" rounded-full p-2 w-10 h-10 border-2"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
-            <a class=" btn  bg-text-primary text-xl font-bold rounded-full  ">Book Consult <span class="ml-4 p-2 text-sm rounded-full text-center w-8 h-8 bg-[#1C1C1C] text-white"><i class="fa-solid fa-arrow-up"></i></span></a>
+            <a class=" btn  bg-text-primary text-xl font-bold rounded-full  ">Book Consult <span class="ml-4 p-2 text-sm rounded-full text-center w-8 h-8 bg-[#1C1C1C] text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            </span></a>
           </div>
          
           
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div class="dropdown ">
+            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -106,7 +129,10 @@
             <p class="py-6 leading-6 text-text-discription">
               The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
             </p>
-            <button class="btn text-xl text-text-title font-bold bg-[#ABEF5F80] rounded-full">View Details  <span class="ml-4 p-2 text-sm w-8 h-8 rounded-full bg-text-primary text-black"><i class="fa-solid fa-arrow-up"></i></span></button>
+            <button class="btn text-xl text-text-title font-bold bg-[#ABEF5F80] rounded-full">View Details  <span class="ml-4 p-2 text-sm w-8 h-8 rounded-full bg-text-primary text-black"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            </span></button>
           </div>
         </div>
       </div>
@@ -218,7 +244,37 @@
       </div>
     </div>
   </section>
-  
+  <!-- next-projects -->
+  <section class=" next-section ">
+    <div class=" w-11/12 mx-auto p-6 lg:p-24">
+
+    <div class="text-center">
+      <button class="btn mb-4 text-text-title  bg-[#ABEF5F33] rounded-full"> <span><i class="fa-solid fa-arrow-right"></i></span>Let’s Connect</button>
+      <h1 class="text-3xl lg:text-5xl font-extrabold text-text-title">Let’s Discuss Next Project</h1>
+      <p class="text-text-discripton font-medium mt-5 ">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+    <div>
+      <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-6 ">
+        <input class="bg-white p-4 w-full rounded-xl font-medium text-[#A0A0A0]" type="text" placeholder="First Name">
+        <input class="bg-white p-4 w-full rounded-xl font-medium text-[#A0A0A0]" type="text" placeholder="First Name">
+        <input class="bg-white p-4 w-full rounded-xl font-medium text-[#A0A0A0]" type="text" placeholder="First Name">
+        <input class="bg-white p-4 w-full rounded-xl font-medium text-[#A0A0A0]" type="text" placeholder="First Name">
+      </div>
+      <div>
+        
+      <textarea
+      placeholder="Write your message here"
+      class=" font-medium text-[#A0A0A0] textarea mt-6  textarea-xl w-full "></textarea>
+      <button class="btn bg-text-primary text-text-title font-bold w-full rounded-xl mt-4">Send Mail <span class="ml-4 p-2 text-sm rounded-full text-center w-8 h-8 bg-[#1C1C1C] text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+      </svg>
+      </span></button>
+      </div>
+    </div>
+
+  </div>
+
+  </section>
     </main>
     <!-- footer  section -->
 </body>
